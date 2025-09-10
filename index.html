@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/search-bar-1890209-1600583.png?f=webp&w=512" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen hero-bg flex flex-col items-center py-12 px-4">
+    <div class="w-full max-w-4xl mx-auto">
+        <!-- Header with animation -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-white mb-2 slide-in">Find What You Need</h1>
+            <p class="text-xl text-gray-300 slide-in delay-100">Search our extensive collection with live results</p>
+        </div>
+        
+        <!-- Search Card with floating animation -->
+        <div class="search-card rounded-xl p-6 shadow-2xl scale-in">
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fas fa-search text-gray-400"></i>
+                </div>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="block w-full pl-10 pr-3 py-4 border border-gray-300 rounded-lg bg-white bg-opacity-90 focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:outline-none transition-all duration-300 hover:shadow-md" 
+                    placeholder="Search for items..."
+                    autocomplete="off"
+                >
+                <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                    <button id="clearSearch" class="text-gray-400 hover:text-gray-600 hidden transition-transform duration-200 hover:scale-110">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Search Stats -->
+            <div id="searchStats" class="mt-2 text-sm text-gray-300 hidden fade-in">
+                Found <span id="resultsCount" class="font-semibold">0</span> results
+            </div>
+        </div>
+        
+        <!-- Results Container -->
+        <div id="resultsContainer" class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 hidden">
+            <!-- Results will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- No Results Message -->
+        <div id="noResults" class="mt-8 text-center hidden">
+            <div class="p-6 bg-white bg-opacity-10 rounded-lg backdrop-filter backdrop-blur-sm fade-in">
+                <i class="fas fa-search-minus text-4xl text-gray-300 mb-4"></i>
+                <h3 class="text-xl font-semibold text-white">No results found</h3>
+                <p class="text-gray-300 mt-2">Try different search terms or check back later</p>
+            </div>
+        </div>
+        
+        <!-- Social Icons with animations -->
+        <div class="flex justify-center space-x-6 mt-12">
+            <a href="" class="social-icon text-white text-2xl hover:text-blue-400 delay-100 fade-in">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/hazrat_ali9mm/#" class="social-icon text-white text-2xl hover:text-pink-500 delay-200 fade-in">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/Hazrat_Ali9" class="social-icon text-white text-2xl hover:text-blue-300 delay-300 fade-in">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/Hazrat-Ali9" class="social-icon text-white text-2xl hover:text-gray-800 delay-500 fade-in">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        
+        <!-- Credits with animation -->
+        <div class="text-center mt-8 text-gray-400 text-sm fade-in delay-700">
+            <p class="mt-1">Created By Hazrat Ali</p>
+            <p class="mt-1">© 2026 Search Solutions</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
