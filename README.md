@@ -15,9 +15,6 @@ A high-performance live search component with instant results filtering and smoo
 
 ## 🛠 Technology Implementation
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,netlify,github" alt="Technology Stack" width="350"/>
-</p>
 
 ## 🖥 Interface Preview
 
