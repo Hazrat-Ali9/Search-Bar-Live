@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
+/* search card */
 .search-card {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.1);
